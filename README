@@ -1,0 +1,33 @@
+# 🚀 SecureCompany - A fake secure company! ✨
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Terraform](https://img.shields.io/badge/Terraform-%20-blue)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-%20-orange)](https://aws.amazon.com/)
+
+**What is this for?** This is a SecureCompany, a set of modules and simple projects in the same directory intended to create an infrastructure securely
+
+## ✨ Features
+
+* **Feature 1:**  Describe the first key feature and its benefits.
+* **Feature 2:**  Describe the second key feature and its benefits.
+* **Feature 3:**  Describe the third key feature and its benefits.
+
+## 🛠️  Modules
+
+* **Module 1:**  Briefly describe the purpose of this module.
+    * **Submodule 1a:** (Optional) If applicable, list any important submodules.
+    * **Submodule 1b:** (Optional)
+* **Module 2:**  Briefly describe the purpose of this module.
+* **Module 3:**  Briefly describe the purpose of this module.
+
+## 🧰 Prerequisites
+
+* **Terraform:**  Specify the minimum required version.
+* **AWS Account:**  With necessary permissions to deploy resources.
+* **AWS CLI:**  Configured with your AWS credentials.
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone [invalid URL removed]

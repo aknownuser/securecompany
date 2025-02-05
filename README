@@ -4,30 +4,74 @@
 [![Terraform](https://img.shields.io/badge/Terraform-%20-blue)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-%20-orange)](https://aws.amazon.com/)
 
-**What is this for?** This is a SecureCompany, a set of modules and simple projects in the same directory intended to create an infrastructure securely
+**What is this for?** This is a SecureCompany, a set of modules and simple projects in the same directory intended to create an infrastructure securely.
 
 ## ✨ Features
 
-* **Feature 1:**  Describe the first key feature and its benefits.
-* **Feature 2:**  Describe the second key feature and its benefits.
-* **Feature 3:**  Describe the third key feature and its benefits.
+* **Feature 1:** Securely create and manage AWS S3 buckets with proper access controls.
+* **Feature 2:** Provision and manage AWS KMS keys with customizable policies.
+* **Feature 3:** Isolate and manage EC2 instances for security and forensics purposes.
 
 ## 🛠️  Modules
 
-* **Module 1:**  Briefly describe the purpose of this module.
-    * **Submodule 1a:** (Optional) If applicable, list any important submodules.
-    * **Submodule 1b:** (Optional)
-* **Module 2:**  Briefly describe the purpose of this module.
-* **Module 3:**  Briefly describe the purpose of this module.
+* **S3 Module:** Manages the creation and configuration of S3 buckets.
+* **KMS Module:** Manages the creation and configuration of KMS keys.
+* **Response Module:** Isolates EC2 instances and sets up necessary endpoints and IAM roles for secure management.
 
 ## 🧰 Prerequisites
 
-* **Terraform:**  Specify the minimum required version.
-* **AWS Account:**  With necessary permissions to deploy resources.
-* **AWS CLI:**  Configured with your AWS credentials.
+* **Terraform:** Minimum required version is specified in the `.terraform.lock.hcl` file.
+* **AWS Account:** With necessary permissions to deploy resources.
+* **AWS CLI:** Configured with your AWS credentials.
 
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
+
    ```bash
-   git clone [invalid URL removed]
+   git clone [repository URL]
+
+2. **Navigate to the desired module directory:**
+
+    ```bash
+    cd terraform/aws/dev/simple_storage
+
+3. **Initialize Terraform:**
+
+    ```bash
+    terraform init
+
+4. **Apply Terraform Configuration:**
+
+    ```bash
+    terraform apply
+
+## 📂 Directory Structure
+
+.gitignore
+LICENSE
+README
+terraform/
+    aws/
+        dev/
+            simple_storage/
+                locals.tf
+                main.tf
+                policies/
+                    kms_policy.json
+        modules/
+            kms/
+                default.json
+                main.tf
+                output.tf
+                variables.tf
+            response/
+                isolate_ec2/
+                    endpoints.tf
+                    main.tf
+                    README
+                    variables.tf
+            s3/
+                main.tf
+                output.tf
+                variables.tf

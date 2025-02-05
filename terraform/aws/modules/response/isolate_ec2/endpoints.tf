@@ -21,3 +21,4 @@ resource "aws_vpc_endpoint" "ssm_ec2_edp" {
         Name = "security"
     }
 }
+

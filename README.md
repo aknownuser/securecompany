@@ -48,30 +48,32 @@
 
 ## 📂 Directory Structure
 
-.gitignore
-LICENSE
-README
-terraform/
-    aws/
-        dev/
-            simple_storage/
-                locals.tf
-                main.tf
-                policies/
-                    kms_policy.json
-        modules/
-            kms/
-                default.json
-                main.tf
-                output.tf
-                variables.tf
-            response/
-                isolate_ec2/
-                    endpoints.tf
+    ```
+    .gitignore
+    LICENSE
+    README
+    terraform/
+        aws/
+            dev/
+                simple_storage/
+                    locals.tf
                     main.tf
-                    README
+                    policies/
+                        kms_policy.json
+            modules/
+                kms/
+                    default.json
+                    main.tf
+                    output.tf
                     variables.tf
-            s3/
-                main.tf
-                output.tf
-                variables.tf
+                response/
+                    isolate_ec2/
+                        endpoints.tf
+                        main.tf
+                        README
+                        variables.tf
+                s3/
+                    main.tf
+                    output.tf
+                    variables.tf
+    ```

@@ -6,12 +6,6 @@
 
 **What is this for?** This is a SecureCompany, a set of modules and simple projects in the same directory intended to create an infrastructure securely.
 
-## ✨ Features
-
-* **Feature 1:** Securely create and manage AWS S3 buckets with proper access controls.
-* **Feature 2:** Provision and manage AWS KMS keys with customizable policies.
-* **Feature 3:** Isolate and manage EC2 instances for security and forensics purposes.
-
 ## 🛠️  Modules
 
 * **S3 Module:** Manages the creation and configuration of S3 buckets.
